@@ -46,7 +46,7 @@ _Registration is Required before continuing to the website_
 5. Password required for the customers to verify the purchase of products
 6. Not registerd users have to verify their purchase through their email
 7. Not registered users cannot use discount coupons 
-8. Not registered users can get the bill of the purchase after the verification of the purchase
+8. Not registered users can get the bill of the purchase to their email after the verification of the purchase
 9. Sellers can view the number of product clicks in the product in bar chart form
 10. Admin can generate Wallet Recharge number
 11. **Currency can be changed**, we can change currency from navigation bar
