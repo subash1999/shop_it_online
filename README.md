@@ -30,6 +30,7 @@ _Registration is Required before continuing to the website_
 ### Customer Register and seller Register
 **1. Seller register**
 - Go to the seller navigation item and click the seller register that appears in the dropdown
+
 **2. Customer Registration**
 - Click the reigster nav item in the rightmost of the navigation bar of the website
 
