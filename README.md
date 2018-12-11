@@ -38,6 +38,17 @@ _Registration is Required before continuing to the website_
 **You will be given the view according to your user type**
 - Click the login in the right side for the logging in into the website
 
+## Login Credentials
+- To Login just go to login and enter your credentials , you will be redirected to your respective views
+### Admin Login Credentials
+- Admin username and password for site are : 
+
+  username: iamadmin
+  
+  password : 123456
+  
+  email : iamadmin@gmail.com
+  
 ## Features
 1. Multiple sellers can sell their products
 2. Discount Coupons can be issued for the customers by admins
@@ -51,7 +62,7 @@ _Registration is Required before continuing to the website_
 10. Admin can generate Wallet Recharge number
 11. **Currency can be changed**, we can change currency from navigation bar
 12. Admin can send the email to any of the user in the site form the admin panel
-
+13. You get maximum 20% discount in the purchase even if you have discount for coupon for more amount
 
 
 
