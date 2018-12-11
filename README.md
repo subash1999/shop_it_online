@@ -24,7 +24,15 @@ _Note: The mysql must running be at port 3306 in xampp, otherwise please change 
 - Run commad "php artisan serve"
 5. Open your browser and go to http://127.0.0.1:8000
 6. The project is now running
+## Mailing Services
+**This project uses mail for sending you puarchase confirmation message, your puarchase bills, contact to admin,etc**
 
+**For better experience mailing is necessary**
+- The mailing services is configured using the mailtrap : https://mailtrap.io/
+- Please go to .env file and change mailing services to any services you want
+- A guide about sending mail in laravel is in : https://scotch.io/tutorials/ultimate-guide-on-sending-email-in-laravel
+- If you won't change mailing configuration, it will be sent to my mailtrap demo inbox and you won't  be able to see mails
+- You can also use gmail for using sending mails : https://artisansweb.net/sending-email-via-gmail-smtp-server-laravel/
 ## Website Walkthrough
 _Registration is Required before continuing to the website_
 ### Customer Register and seller Register
