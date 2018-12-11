@@ -22,6 +22,7 @@ MAIN SIDEBAR MENU
         </a>
         <ul class="sub">
           <li class=""><a  href="<?php echo e(url('seller/dashboard/new_product')); ?>">New Product</a></li>
+          <li class=""><a  href="<?php echo e(url('seller/dashboard/my_products')); ?>">My Products</a></li>
           <li class=""><a  href="<?php echo e(url('seller/dashboard/ordered_items')); ?>">Ordered Products</a></li>
           
         </ul>

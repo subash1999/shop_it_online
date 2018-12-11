@@ -16,11 +16,11 @@ class NotAdmin
      */
     public function handle($request, Closure $next)
     {
-        /*if(Auth::check()){
+        if(Auth::check()){
             if(Auth::user()->isAdmin()){
                 abort('404','Please log out form the admin dashboard first, Security Reasons');
             }
-        }*/
+        }
         return $next($request);
     }
 }

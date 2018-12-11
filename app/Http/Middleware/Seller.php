@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use App\User;
 use Closure;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class Seller
 {
@@ -17,7 +18,7 @@ class Seller
      */
     public function handle($request, Closure $next)
     {
-        /*if(Auth::check()){
+        if(Auth::check()){
             if(Auth::user()->isSeller()){
                 return $next($request);        
             }
@@ -28,9 +29,8 @@ class Seller
         else{
             abort(403);
         }
-*/       
-        $user = User::ofType('seller')->first();
-        Auth::loginUsingId($user->user_id);
+       
+
         return $next($request);  
     }
 }
