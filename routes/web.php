@@ -30,7 +30,7 @@ use Illuminate\Support\Facades\Auth;
 // $user->password = bcrypt("a");
 // $user->email = "a@gmail.com";
 // $user->save();
-
+Auth::logout();
 Route::get('practice', function() {
 	return view('practice');
 });

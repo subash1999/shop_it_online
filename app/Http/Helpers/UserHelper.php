@@ -90,7 +90,7 @@
  			$curr_id = session('curr_id');
  			// checking if the stored curr_id exists in db if  not set another value
  			$currency = Currency::find($curr_id);
- 			if(count($currency)<=0){
+ 			if($currency->count()<=0){
  				$currency = Currency::first();
  				$curr_id = $currency->curr_id;
  			}
@@ -105,7 +105,7 @@
  		}
  		// checking if the stored curr_id exists in db if  not set another value
  		$currency = Currency::find($curr_id);
- 		if(count($currency)<=0){
+ 		if($currency->count()<=0){
  			$currency = Currency::first();
  			$curr_id = $currency->curr_id;
  		}
@@ -113,8 +113,9 @@
  	}
  	public function setCurrentUserChoiceCurrencyId($curr_id)
  	{
- 		$currency = Currency::find($curr_id);
- 		if(count($currency)<=0){
+		 $currency = Currency::find($curr_id);
+		//  dd(count($currency));
+ 		if($currency->count()<=0){
  			abort(403,"The currency ID is not in db while assiging curreny for user");
  		}
 

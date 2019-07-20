@@ -20,7 +20,7 @@ class CreateDiscountCouponsTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('user_id')->on('users')->onDelete('cascade');
             $table->float('amount')->unsigned();
-            $table->text('coupon_code')->unique();
+            $table->string('coupon_code',500)->unique();
             $table->integer('curr_id')->unsigned();
             $table->foreign('curr_id')->references('curr_id')->on('currencies')->onDelete('cascade');
             

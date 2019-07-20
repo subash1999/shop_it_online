@@ -106,7 +106,7 @@ class UsersTableSeeder extends Seeder
         $user_type_relation->user_id = $seller_user->user_id;
         $user_type_relation->save();   
 
-        $seller = new Seller;
+        $seller = new App\Seller;
         $seller->user_id = $seller_user->user_id;
         $seller->first_name = $seller_user->username;
         $seller->last_name = $seller_user->username;
@@ -132,7 +132,7 @@ class UsersTableSeeder extends Seeder
         $seller->photo_verify = "YES";
         $seller->save();
         //user verify to NO so that the user won't be deleted in certain period
-        $user = User::find($seller_user->user_id);
+        $user = App\User::find($seller_user->user_id);
         $user->user_verify = "NO";
         $user->save();          
 

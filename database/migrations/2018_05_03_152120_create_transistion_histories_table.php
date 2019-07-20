@@ -29,7 +29,7 @@ class CreateTransistionHistoriesTable extends Migration
             $table->integer('curr_id')->unsigned();
             $table->foreign('curr_id')->references('curr_id')->on('currencies')->onDelete('cascade');
             $table->integer('spor_id');
-            $table->foreign('spor_id')->references('spor_id')->on('s_p_option_relations')->onDelete('cascade');
+            // $table->foreign('spor_id')->references('spor_id')->on('s_p_option_relations')->onDelete('cascade');
             $table->integer('spsd_id')->unsigned()->nullable();
             $table->foreign('spsd_id')->references('spsd_id')->on('s_p_sub_divisions')->onDelete('cascade');
             $table->softDeletes();
